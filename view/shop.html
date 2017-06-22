@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<style>
+			body{
+				font-family: "微软雅黑";
+			}
+		</style>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, 	minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+       <link rel="stylesheet" type="text/css" href="../css/index.css"/>
+       <script src="../js/jquery.min.js"></script>
+      
+	</head>
+	<body>
+		<div class="box">
+			<!--头部-->
+			<header>
+				<p><a href="maintain.html">
+					<img src="../img/ma-back_03.png" />
+				</a></p>
+				<p>4S店选择</p>
+			</header>
+			<!--内容-->
+			<div class="content">
+				<!--日期-->
+			<div class="date">
+			<ul>
+			<li><a href="#"><span id="date1"></span></br><span class="week1"></span></a></li>
+			<li><a href="#"><span class="date2"></span></br><span class="week2"></span></a></li>
+			<li><a href="#"><span class="date3"></span></br><span class="week3"></span></a></li>
+			<li><a href="#"><span class="date4"></span></br><span class="week4"></span></a></li>
+			<li><a href="#"><span class="date5"></span></br><span class="week5"></span></a></li>
+			<li><a href="#"><img src="../img/kalendar.png"/></a></li>
+			</ul>
+			</div>
+			<div class="shop">
+				<!--店铺-->
+		    <dl>
+		    	<dt> <img src="../img/shop1.png"/></dt>
+		    	<dd>
+		    	<p ><img  src="../img/logo.png" style="vertical-align: middle;"/><span >北京博瑞祥恒4S店   </span></p>
+		    	<p><img src="../img/star.png"/><img src="../img/star.png"/><img src="../img/star.png"/><img src="../img/star.png"/><img src="../img/star.png"/>  <span>5分</span></p>
+		    	<p>北京市朝阳区东直门外左家庄路2号   &nbsp;14.8km</p>
+		    	</dd>
+		    </dl>
+			</div>
+			<!--指导价-->
+			<p class="guide">4S店指导价 ￥987</p>
+			<div class="destine" id="destine">
+				<!--预定-->
+			</div>
+			<p class="hr"></p>
+			<div class="shop">
+				<!--店铺-->
+		    <dl>
+		    	<dt> <img src="../img/shop2.png"/></dt>
+		    	<dd>
+		    	<p><img  src="../img/logo.png" style="vertical-align: middle;"/><span>北京东仁金舆一众4S店   </span></p>
+		    	<p><img src="../img/star.png"/><img src="../img/star.png"/><img src="../img/star.png"/><img src="../img/star.png"/><img src="../img/star.png"/>  <span>5分</span></p>
+		    	<p>北京市朝阳区平房乡石各庄东甲1号   &nbsp;23.5km</p>
+		    	</dd>
+		    </dl>
+			</div>
+			<!--指导价-->
+			<p class="guide">4S店指导价 ￥987</p>
+			<div class="destine">
+				<!--预定-->
+				<!--特惠-->
+				<p id="preference"><span>08:30-10:00<a href="#" class="preference">特惠</a> </span><span>￥803</span><span><a href="#" class="ok">预定</a></span></p>
+				<p><span>10:00-11:30</span><span>￥803</span><span><a href="#" class="ok">预定</a></span></p>
+			    
+			</div>
+			</div>
+			
+		</div>
+		
+	</body>
+	
+<script>
+
+	(function(doc){
+	function changeSize(){
+	var size = doc.documentElement.clientWidth/320*10;	
+	doc.querySelector('html').style.fontSize = size+'px';
+	}
+	window.onresize = changeSize;
+	changeSize();	
+	
+})(document)
+
+   var d = new Date();
+var date = d.getMonth()+1+"-"+(d.getDate())
+var date2 = d.getMonth()+1+"-"+(d.getDate()+1)
+var date3 = d.getMonth()+1+"-"+(d.getDate()+2)
+var date4 = d.getMonth()+1+"-"+(d.getDate()+3)
+var date1 = d.getMonth()+1+"-"+(d.getDate()+4)
+   var day = d.getDay()
+   var week=""; 
+   var tody = "";
+  if (day==0) week='周日',tody="今天";
+  if (day==1) week='周一',tody="今天";
+  if (day==2) week='周二',tody="今天";
+  if (day==3) week='周三',tody="今天";
+  if (day==4) week='周四',tody="今天";
+  if (day==5) week='周五',tody="今天";
+  if (day==6) week='周六',tody="今天";
+$('.week1').html(tody);
+var da = day+1;
+  if (da==0) week='周日';
+  if (da==1) week='周一';
+  if (da==2) week='周二';
+  if (da==3) week='周三';
+  if (da==4) week='周四';
+  if (da==5) week='周五',  tody="今天";
+  if (da==6) week='周六';
+  $('.week2').html(week);
+var d = day+2;
+  if (d==0) week='周日';
+  if (d==1) week='周一';
+  if (d==2) week='周二';
+  if (d==3) week='周三';
+  if (d==4) week='周四';
+  if (d==5) week='周五',  tody="今天";
+  if (d==6) week='周六';
+  $('.week3').html(week);
+  var a = day+3;
+  if (a==0) week='周日';
+  if (a==1) week='周一';
+  if (a==2) week='周二';
+  if (a==3) week='周三';
+  if (a==4) week='周四';
+  if (a==5) week='周五',  tody="今天";
+  if (a==6) week='周六';
+  $('.week4').html(week);
+    var y = day+4;
+  if (y==0) week='周日';
+  if (y==1) week='周一';
+  if (y==2) week='周二';
+  if (y==3) week='周三';
+  if (y==4) week='周四';
+  if (y==5) week='周五',  tody="今天";
+  if (y==6) week='周六';
+  $('.week5').html(week);
+  
+
+$('#date1').html('0'+date);
+$('.date2').html('0'+date2);
+$('.date3').html('0'+date3);
+$('.date4').html('0'+date4);
+$('.date5').html('0'+date1);
+
+setTimeout(function(){
+	$('.ok').click(function(){
+	alert('恭喜你，已经预定成功！')
+})
+},2000)
+
+</script>
+</html>
+
+<script src="../js/shop.js"></script>

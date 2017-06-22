@@ -1,0 +1,102 @@
+<div class="malistBody">
+     		<!--列表头-->
+   		      <div class="meList-head">
+   		      	  <span>4S保养项目</span>
+   		      	  <a href="#"><img src="../img/ma-book_03.jpg" /> 保养手册</a>
+   		      </div>
+   		   <!--列表头-->
+   		   
+   		   <!--列表身体部分-->
+   		      <div class="mainList-body">
+   		      	   <ul class="mainList-ul">
+   		      	   	   <li ng-repeat="x in arr track by $index">
+   		      	   	   	<!--{{x[0].id}}-->
+   		      	   	   	  <input type="checkbox" id="checkbox_a{{x.id}}" class="chx_1"  ng-click="choose()"/>
+   		      	   	   	  <label for="checkbox_a{{x.id}}"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p class="p1"><span>{{x.project}}</span><span>{{x.explain}}</span></p>
+   		      	   	   	  <p class="p2"><del class="oldPrice">{{x.originalPrice}}</del><span class="newPrice">{{x.presentPrice}}</span></p>
+   		      	   	   </li>
+   		      	   	   <!--<div class="mainList-ul-div">
+   		      	   	   	   <img src="../img/jiyou_03.jpg" /> 
+   		      	   	   	   <img src="../img/jiyou_03.jpg" /> 
+   		      	   	   	   <img src="../img/jiyou_03.jpg" /> 
+   		      	   	   	   <div class="mainCon"></div>
+   		      	   	   	   <div class="mainCon"></div>
+   		      	   	   	   <div class="mainCon"></div>
+   		      	   	   </div>-->
+   		      	   	   <!--<li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a2" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a2"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span>&nbsp;<img src="../img/ma-!_03.jpg" /></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	    <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a3" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a3"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	    <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a4" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a4"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	    <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a5" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a5"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	   <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a6" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a6"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	   <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a7" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a7"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	   <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a8" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a8"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	   <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a9" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a9"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	   <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a10" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a10"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	   <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a11" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a11"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	   <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a12" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a12"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>
+   		      	   	   <li>
+   		      	   	   	  <input type="checkbox" id="checkbox_a13" class="chx_1" />
+   		      	   	   	  <label for="checkbox_a13"><i class="glyphicon glyphicon-ok"></i></label>
+   		      	   	   	  <p><span>机油</span><span>4.0L</span></p>
+   		      	   	   	  <p><del>￥198</del><span>￥149</span></p>
+   		      	   	   </li>-->
+   		      	   </ul>
+   		      </div>
+   		   <!--列表身体部分-->
+   </div>

@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  -webkit-flex-direction: column; }
+
+.content {
+  width: 100%;
+  -webkit-flex-grow: 1; }
+
+header {
+  width: 100%;
+  height: 2.3rem;
+  padding: 0rem 0.75rem 0rem 0.9rem;
+  display: flex;
+  line-height: 2.3rem; }
+  header label {
+    width: 17.4rem;
+    text-align: center;
+    font-size: 0.85rem;
+    color: #5f5f5f;
+    font-weight: bold; }
+  header > a {
+    width: 0.45rem;
+    display: inline-block;
+    background: deeppink;
+    background: url("../images/er-2_12.png");
+    background-size: 100% 100%;
+    height: 0.8rem;
+    line-height: 2.3rem;
+    margin-top: 0.78rem; }
+  header span {
+    width: 1.05rem;
+    display: inline-block; }
+
+.logo {
+  width: 100%;
+  height: 4.1rem;
+  background: #2d3c4b;
+  display: flex;
+  line-height: 4.1rem;
+  padding: 0rem 0rem 0rem 1.05rem;
+  color: white; }
+  .logo img {
+    width: 2rem;
+    height: 2rem;
+    margin-top: 1rem; }
+  .logo .logo_center {
+    width: 10.1rem;
+    background: #286090;
+    padding-left: 0.5rem;
+    font-size: 0.75rem;
+    padding-top: 1rem; }
+    .logo .logo_center p {
+      line-height: 1.2rem; }
+  .logo .logo_right {
+    -webkit-flex-grow: 1;
+    font-size: 0.65rem; }
+
+/*# sourceMappingURL=scheme.css.map */

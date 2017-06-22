@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html, body, .box {
+  width: 100%;
+  height: 100%; }
+
+header {
+  width: 100%;
+  height: 3.5rem;
+  background: #ffffff;
+  text-align: center;
+  line-height: 3.5rem;
+  position: relative; }
+  header p {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold; }
+     header p a{
+     	   text-decoration: none;
+     	   display: block;
+     	   width:1rem;
+     	   height:1rem;
+     }
+    header p a img {
+      width: 1rem; }
+    header p:nth-child(1) {
+      position: absolute;
+      left: 1.5rem;
+      top: .4rem; }
+
+.content {
+  width: 100%; }
+  .content .date {
+    width: 100%;
+    height: 5rem;
+    background: #2d3c4b; }
+    .content .date ul {
+      padding-top: .5rem;
+      width: 100%;
+      list-style: none;
+      display: flex;
+      -webkit-flex-direction: row;
+      -webkit-justify-content: space-around; }
+      .content .date ul li {
+        line-height: 2rem;
+        -webkit-flex-grow: 1;
+        text-align: center; }
+        .content .date ul li:nth-child(6) {
+          padding-top: .5rem;
+          text-align: center; }
+          .content .date ul li:nth-child(6) img {
+            width: 2rem; }
+        .content .date ul li:nth-child(2) {
+          background: #fa5a4b;
+          color: #fff;
+          border: 1px solid #fa5a4b;
+          border-radius: 5px; }
+        .content .date ul li a {
+          text-decoration: none;
+          display: block;
+          width:100%;
+          height:100%;
+          color: #fff;
+          width: 100%; }
+         /*.content .date ul li :hover{
+            background: #fa5a4b;
+          color: #fff;
+          border: 1px solid #fa5a4b;
+          border-radius: 5px;
+          }*/
+  .content .shop {
+    width: 100%;
+    height: 8.5rem; }
+    .content .shop dl {
+      width: 100%;
+      display: flex;
+      -webkit-flex-direction: row;
+      -webkit-justify-content: space-around; }
+      .content .shop dl dt {
+        padding: 0.2rem;
+        width: 25%;
+        padding-top: 1.5rem; }
+        .content .shop dl dt img {
+          width: 100%; }
+      .content .shop dl dd {
+        width: 75%;
+        margin-left: .2rem;
+        margin-top: 1.5rem; }
+        .content .shop dl dd p:nth-child(1) {
+          font-size: 1.4rem;
+          display: inline-block;
+          vertical-align: middle; }
+          .content .shop dl dd p:nth-child(1) img {
+            width: 1.5rem; }
+          .content .shop dl dd p:nth-child(1) span {
+            display: inline-block; }
+        .content .shop dl dd p:nth-child(2) span {
+          color: #ffb456;
+          font-size: 1.4rem;
+          font-weight: bold; }
+        .content .shop dl dd p:nth-child(2) img {
+          width: 1rem; }
+        .content .shop dl dd p:nth-child(3) {
+          font-size: 1rem; }
+  .content .guide {
+    width: 100%;
+    height: 2rem;
+    background: #fffae6;
+    font-size: 1rem;
+    color: #ffa27c;
+    text-align: center;
+    line-height: 2rem;
+    border: 1px solid #fff0e2; }
+  .content .destine {
+    width: 100%; }
+    .content .destine p {
+      width: 100%;
+      height: 4.5rem;
+      border-bottom: 1px solid #fafafa; }
+      .content .destine p span {
+        font-size: 1.2rem;
+        width: 33%;
+        display: inline-block;
+        height: 100%;
+        text-align: center;
+        line-height: 4.5rem; }
+        .content .destine p span:nth-child(2) {
+          color: #f85346; }
+        .content .destine p span a {
+          text-decoration: none;
+          width: 5.5rem;
+          height: 2.5rem;
+          background: #fa5a4b;
+          display: inline-block;
+          color: #fff;
+          text-align: center;
+          line-height: 2.5rem;
+          border-radius: 5px; }
+  .content .hr {
+    width: 100%;
+    height: 1rem;
+    background: #f4f4f8; }
+  .content #preference {
+    position: relative; }
+    .content #preference .preference {
+      position: absolute;
+      left: 30%;
+      top: 1.5rem;
+      text-decoration: none;
+      width: 3rem;
+      height: 1.5rem;
+      border: 1px solid  #fba69f;
+      line-height: 1.4rem;
+      color: #fba69f;
+      text-align: center;
+      background: #fff;
+      border-radius: 2px; }
+
+/*# sourceMappingURL=index.css.map */

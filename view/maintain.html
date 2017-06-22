@@ -1,0 +1,126 @@
+﻿<!DOCTYPE html>
+<html ng-app="myApp">
+	<head>
+		<meta charset="UTF-8">
+		<title>智能保养方案</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, 	minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<meta name="format-detection" content="telephone=no, email=no" />
+		<meta name="apple-mobile-web-app-capable" content="yes"/>
+		<meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+	   
+	   <link rel="stylesheet" href="../css/bootstrap.min.css" />
+	   <link rel="stylesheet" href="../css/maintain.css" />
+	   
+	   <script src="../js/angular.js"></script>
+	   <script src="../js/angular-route.js"></script>
+	   <script src="../js/maintain.js"></script>
+	   
+	   <script src="../js/jquery.min.js"></script>
+	   <script src="../js/maintain_jq.js"></script>
+	</head>
+	<!--<body ng-controller='mainCtrl'>-->
+		<body>
+		<!--最外面的盒子-->
+		<div class="box">
+			<!--头部-->
+		       <header>
+		       	     <a href="../index.html"></a>
+		       	     <label>智能保养方案</label>
+		       	     <span>客服</span>
+		       	     <a href="#"></a>
+		       </header>
+		 <!--头部-->
+		
+		
+		
+		<!--内容-->
+		<div class="content">
+			<!--内容里面的头部-->
+			      <div class="head">
+			      	    <div class="headLeft">
+			      	    	 <dl>
+			      	    	 	<dt><img src="../img/ma-logo_03.png" /></dt>
+			      	    	 	<dd>
+			      	    	 		<span>大众宝来</span>
+			      	    	 		<p>2016款 1.6L 手动 时尚型</p>
+			      	    	 	</dd>
+			      	    	 </dl>
+			      	    </div>
+			      	    <div class="headRighft">
+			      	    	<span>150000 公里</span><br />
+			      	    	<span>当前里程</span>
+			      	    	<a href="#">
+			      	    		<img src="../img/ma-bianji_03.png" />
+			      	    	</a>
+			      	    </div>
+			      </div>
+			<!--内容里面的头部-->
+			
+			
+		   <!--列表的标题部分-->
+		       <div class="maList">
+		       	    <!--tab选项卡-->
+			        <ul id="tab">
+			        	<li><a href="#/maintainpage" class="maOn">保养(3/9)</a></li>
+			        	<li><a href="#/curing">养护(0/9)</a></li>
+			        	<li><a href="#/repair">维修(0/9)</a></li>
+			        </ul>
+		   		   <!--tab选项卡-->
+		       </div>
+		   <!--列表的标题部分-->
+		   
+		   <!--列表的总体部分         这里是tab跳转部分-->
+			   <ng-view>
+			   	 
+			   </ng-view>
+			<!--列表的总体部分-->
+		</div>
+		   
+		<!--内容-->
+		
+		
+		
+		
+		
+		<!--尾部-->
+		      <footer>
+		      	<div class="footDiv">
+			      	      <div class="footLeft">
+			      	            <a href="#" class="footLeft-a">
+			      	            	<dl>
+			      	            		<dt>
+			      	            			<span id="geshu">0</span>
+			      	            			<span><img src="../img/ma-shop_11.png" /></span>
+			      	            		</dt>
+			      	            		<dd>
+			      	            			<p><span>￥</span><span id="zongjia">0</span></p>&nbsp;&nbsp;
+			      	            			<span> | </span>&nbsp;&nbsp;
+			      	            			<p><span>￥</span><del id="old">0</del><br/><span id="cha">省￥0</span></p>
+			      	            		</dd>
+			      	            	</dl>
+			      	            </a>
+			      	       </div>
+			      	      <div class="footRight">
+			      	     	   <a href="shop.html" id="next">下一步</a>
+			      	     </div>
+		      	     </div>
+		      </footer>
+		<!--尾部-->
+		</div>
+		
+		
+	</body>
+	<script>
+		//rem转化
+		(function(doc){
+			function changeSize(){
+						var size=doc.documentElement.clientWidth/320*20;
+						doc.querySelector('html').style.fontSize=size+'px';
+					}
+				//用户缩放浏览器窗口大小时
+				window.onresize=changeSize;
+				changeSize();
+			})(document);
+	</script>
+</html>
